@@ -6,9 +6,9 @@ const GET_INIT_LIST = 'get_init_list'
 
 
 export {
-  INPUT_VALUE_CHANGE,
-  ADD_ITEM,
-  DELETE_ITEM,
-  GET_INIT_DATA,
-  GET_INIT_LIST
+    INPUT_VALUE_CHANGE,
+    ADD_ITEM,
+    DELETE_ITEM,
+    GET_INIT_DATA,
+    GET_INIT_LIST
 }
