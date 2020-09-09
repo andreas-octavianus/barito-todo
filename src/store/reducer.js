@@ -6,7 +6,6 @@ import {
 
 } from './actionTypes'
 
-
 const defaultState = {
     inputValue: '',
     list: []

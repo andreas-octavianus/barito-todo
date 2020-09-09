@@ -13,7 +13,6 @@ import {
 
 import axios from 'axios'
 
-
 function* getInitListData() {
     try {
         const res = yield axios.get('/test.json')
