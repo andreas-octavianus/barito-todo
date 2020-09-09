@@ -1,18 +1,14 @@
 import React from 'react';
-import './App.css';
-import TodoList from "./containers/TodoList";
-import TodoForm from "./components/TodoForm";
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux'
+import './index.css';
+import TodoList from './components/TodoList'
+import store from './store'
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <button>+</button>
-                <TodoList todos={[{text: "Buy milk", done: true}, {text: "Pick up dry cleaning"}]}/>
-                <TodoForm/>
-            </header>
-        </div>
-    );
-}
+const App = (
+    <Provider store={store}>
+        <TodoList />
+    </Provider>
+)
 
-export default App;
+ReactDOM.render(App, document.getElementById('root'));
